@@ -15,9 +15,9 @@ public class DeleteCustomer {
 		return response;
 	}
 	
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		DeleteCustomer del=new DeleteCustomer();
 		del.deleteCustomer("cus_H0MtoUkSBQPj1X").prettyPrint();
-	}
+	}*/
 }
