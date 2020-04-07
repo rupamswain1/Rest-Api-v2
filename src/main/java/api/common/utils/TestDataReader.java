@@ -2,9 +2,6 @@ package api.common.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -25,8 +22,12 @@ public class TestDataReader {
 
 	private Workbook workbook=null;
 	private Sheet sheet=null;
-	private String testData=".//src//test//resources//TestData.xlsx";
+	private String testData=null;
 	private FileInputStream fis=null;
+	public TestDataReader() throws Exception {
+		// TODO Auto-generated constructor stub
+		testData=new PropertFileReader().getApplicationData("TestDataFilePath");
+	}
 	public String getTestData() {
 		return testData;
 	}
