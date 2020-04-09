@@ -23,7 +23,6 @@
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
 	    <version>7.1.0</version>
-	    <scope>test</scope>
 	</dependency>
 	<dependency>
 		<groupId>org.apache.poi</groupId>
@@ -37,6 +36,12 @@
     <version>4.1.1</version>
 </dependency>
 	
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20190722</version>
+</dependency>
 	  	
   </dependencies>
 </project>

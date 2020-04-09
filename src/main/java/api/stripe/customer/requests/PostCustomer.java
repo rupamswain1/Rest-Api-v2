@@ -1,30 +1,23 @@
 package api.stripe.customer.requests;
 import static io.restassured.RestAssured.*;
-
-import java.util.HashMap;
 import java.util.Map;
-
-import api.resources.StripeApiCustomerResources;
-
 import io.restassured.response.Response;
 
-public class PostCustomer {
+public class PostCustomer extends BaseApiRequest{
 	
-	public Response createCustomer() {
-		StripeApiCustomerResources resource=new StripeApiCustomerResources();
+	public Response createCustomer() throws Exception {
 		Response response=given().auth()
-							.basic(resource.getSECURITY_KEY(), "")
-							.post(resource.getBaseUri()+resource.getPostEndpoint());
-		response.prettyPrint();
-		System.out.println(response.getStatusCode());
+							.basic(getApplicationData("SECURITY_KEY"), "")
+							.post(getApplicationData("baseUri")+getApplicationData("postEndpoint"));
+		/*response.prettyPrint();
+		System.out.println(response.getStatusCode());*/
 		return response;
 	}
-	public Response createCustomer(Map<String, Object> data)
+	public Response createCustomer(Map<String, Object> data) throws Exception
 	{
-		StripeApiCustomerResources resource=new StripeApiCustomerResources();
 		Response response=given().auth()
-							.basic(resource.getSECURITY_KEY(), "").formParams(data)
-							.post(resource.getBaseUri()+resource.getPostEndpoint());
+							.basic(getApplicationData("SECURITY_KEY"), "").formParams(data)
+							.post(getApplicationData("baseUri")+getApplicationData("postEndpoint"));
 		response.prettyPrint();
 		System.out.println(response.getStatusCode());
 		return response;

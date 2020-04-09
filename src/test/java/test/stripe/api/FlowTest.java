@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import api.stripe.customer.requests.DeleteCustomer;
@@ -16,19 +18,20 @@ import api.stripe.customer.requests.PutCustomer;
 import io.restassured.response.Response;
 public class FlowTest {
 	static String custId="";
-	@Test(description="create a blank customer")
-	public void createCustomer()
+	@Test(description="create a blank customer",priority=1)
+	public void createCustomer() throws Exception
 	{
 		PostCustomer post=new PostCustomer();
 		Response response=post.createCustomer();
 		assertEquals(response.statusCode(), 200);
-	
 		FlowTest.custId=response.jsonPath().get("id");
+		JSONObject jsonObject=new JSONObject(response.asString());
+		Assert.assertTrue(jsonObject.has("id"));
 		System.out.println("Generated customer id is: "+FlowTest.custId);
 	}
 	
 	@Test(description="Get customer details", dependsOnMethods="createCustomer")
-	public void getCustomerDetails()
+	public void getCustomerDetails() throws Exception
 	{
 		GetCustomer customer=new GetCustomer();
 		Response response=customer.getAllCutomers();
@@ -41,33 +44,35 @@ public class FlowTest {
 			System.out.println(s);
 		}
 	}
-	@Test(description="Update customer data", dependsOnMethods="getCustomerDetails")
-	public void updateCustomer()
+	@Test(description="Update customer data",priority=2,dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	public void updateCustomer(Map<String, String> data) throws Exception
 	{
-		Map<String, Object> data=new HashMap<String, Object>();
-		data.put("email", "emeail@email.com");
-		data.put("description","No description");
-		//data.put("address", "21 Baker street");
+		
+		
 		PutCustomer updateCustomer=new PutCustomer();
-		Response response=updateCustomer.updateCustomerData(FlowTest.custId, data);
+		String custId=data.get("custId");
+		data.remove("custId");
+		Response response=updateCustomer.updateCustomerData(custId, data);
 		assertEquals(response.getStatusCode(), 200);
+				
 	}
-	@Test(description="Validate updated customer details", dependsOnMethods="updateCustomer")
-	public void validatedCustomerDetails()
+	@Test(description="Validate updated customer details", dependsOnMethods="updateCustomer",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	public void validatedUpdatedCustomerDetails(Map<String, String> data) throws Exception
 	{
 		GetCustomer customer=new GetCustomer();
-		Response response=customer.getCustomer(FlowTest.custId);
+		Response response=customer.getCustomer(data.get("custId"));
 		assertEquals(response.getStatusCode(), 200);
-		assertEquals(response.jsonPath().get("email"), "emeail@email.com");
+		assertEquals(response.jsonPath().get("email"), data.get("email"));
+		assertEquals(response.jsonPath().get("description"), data.get("description"));
 		//response.prettyPrint();
 	}
-	@Test(description="delete customer", dependsOnMethods="validatedCustomerDetails")
-	public void deleteCustomer()
+	@Test(description="delete customer", dependsOnMethods="validatedUpdatedCustomerDetails",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	public void deleteCustomer(Map<String, String> data) throws Exception
 	{
 		DeleteCustomer delete=new DeleteCustomer();
-		Response response=delete.deleteCustomer(FlowTest.custId);
+		Response response=delete.deleteCustomer(data.get("custId"));
 		assertEquals(response.getStatusCode(), 200);
-		assertEquals(response.jsonPath().get("id"), FlowTest.custId);
+		assertEquals(response.jsonPath().get("id"), data.get("custId"));
 		assertEquals(response.jsonPath().get("deleted"), true);
 	}
 	

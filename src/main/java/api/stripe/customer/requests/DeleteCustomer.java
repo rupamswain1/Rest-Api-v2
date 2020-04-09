@@ -2,16 +2,15 @@ package api.stripe.customer.requests;
 
 import static io.restassured.RestAssured.*;
 
-import api.resources.StripeApiCustomerResources;
+import api.common.utils.PropertFileReader;
 import io.restassured.response.Response;
 
-public class DeleteCustomer {
+public class DeleteCustomer extends BaseApiRequest{
 	
-	public Response deleteCustomer(String custId)
+	public Response deleteCustomer(String custId) throws Exception
 	{
-		StripeApiCustomerResources resource=new StripeApiCustomerResources();
-		String url=resource.getBaseUri()+resource.getDeleteEndpoint()+custId;
-		Response response=given().auth().basic(resource.getSECURITY_KEY(), "").delete(url);
+		String url=getApplicationData("baseUri")+getApplicationData("deleteEndpoint")+custId;
+		Response response=given().auth().basic(getApplicationData("SECURITY_KEY"), "").delete(url);
 		return response;
 	}
 	

@@ -1,39 +1,35 @@
 package api.stripe.customer.requests;
 
 import static io.restassured.RestAssured.*;
-
-import api.resources.StripeApiCustomerResources;
 import io.restassured.response.Response;
-public class GetCustomer {
+public class GetCustomer extends BaseApiRequest{
 
-	public Response getAllCutomers()
+	public Response getAllCutomers() throws Exception
 	{
-		StripeApiCustomerResources resources=new StripeApiCustomerResources();
-		Response response=given().auth().basic(resources.getSECURITY_KEY(), "")
-							.get(resources.getBaseUri()+resources.getGetEndpoint());
+		
+		Response response=given().auth().basic(getApplicationData("SECURITY_KEY"), "")
+							.get(getApplicationData("baseUri")+getApplicationData("getEndpoint"));
 		return response;
 	}
 	
-	public Response getCustomer(String custId)
+	public Response getCustomer(String custId) throws Exception
 	{
-		StripeApiCustomerResources resources=new StripeApiCustomerResources();
-		String uri=resources.getBaseUri()+resources.getGetEndpoint()+"/"+custId;
-		Response response=given().auth().basic(resources.getSECURITY_KEY(), "")
+		String uri=getApplicationData("baseUri")+getApplicationData("getEndpoint")+"/"+custId;
+		Response response=given().auth().basic(getApplicationData("SECURITY_KEY"), "")
 							.get(uri);
 		return response;
 	}
-	public Response getCustomerList(int limit)
+	public Response getCustomerList(int limit) throws Exception
 	{
-		StripeApiCustomerResources resources=new StripeApiCustomerResources();
-		Response response=given().auth().basic(resources.getSECURITY_KEY(), "").formParam("limit", limit)
-							.get(resources.getBaseUri()+resources.getGetEndpoint());
+		Response response=given().auth().basic(getApplicationData("SECURITY_KEY"), "").formParam("limit", limit)
+							.get(getApplicationData("baseUri")+getApplicationData("getEndpoint"));
 		return response;
 	}
 	
-	public static void main(String args[])
+	/*public static void main(String args[])
 	{
 		GetCustomer cust=new GetCustomer();
 		//cust.getCustomer("cus_H0Lf3RnGMQL6jY").prettyPrint();
 		cust.getCustomerList(3).prettyPrint();
-	}
+	}*/
 }

@@ -5,11 +5,9 @@
     <classes>
       <class name="test.stripe.api.FlowTest">
         <methods>
-          <include name="createCustomer"/>
-          <include name="validatedCustomerDetails"/>
+          <include name="validatedUpdatedCustomerDetails"/>
           <include name="deleteCustomer"/>
-          <include name="getCustomerDetails"/>
-          <include name="updateCustomer"/>
+          <include name="updateCustomer" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- test.stripe.api.FlowTest -->
     </classes>

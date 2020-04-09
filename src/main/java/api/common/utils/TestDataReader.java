@@ -72,7 +72,7 @@ public class TestDataReader {
 	 * @return returns a list of map<String,String>
 	 * @throws Exception
 	 */
-	public List<Map<String, String>> getData(String dataName) throws Exception
+	public List<Map<String, String>> getData(String methodName) throws Exception
 	{
 		TestDataReader reader=new TestDataReader();
 		reader.setFis(new FileInputStream(new File(this.testData)));
@@ -114,9 +114,13 @@ public class TestDataReader {
 					catch (NullPointerException e) {
 						colContent="";
 					}
+					catch (IllegalStateException o) {
+						// TODO: handle exception
+						colContent="";
+					}
 					
 				
-					if(colContent.equalsIgnoreCase(dataName))
+					if(colContent.equalsIgnoreCase(methodName))
 					{
 						//System.out.println("data name matched: "+colContent);
 						dataStartCell=j;
@@ -135,7 +139,7 @@ public class TestDataReader {
 		List<Map<String, String>> dataList=new ArrayList<Map<String,String>>();
 		if(dataFound==false)
 		{
-			throw new Exception("Test Data "+dataName+ " not Found");
+			throw new Exception("Test Data for test method "+methodName+ " not Found");
 		}
 		else {
 			reader.setSheet(reader.getWorkbook().getSheetAt(dataSheet));
