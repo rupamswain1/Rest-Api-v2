@@ -1,4 +1,4 @@
-package api.common.utils;
+package com.api.common.utils;
 
 import java.io.FileInputStream;
 import java.util.Properties;

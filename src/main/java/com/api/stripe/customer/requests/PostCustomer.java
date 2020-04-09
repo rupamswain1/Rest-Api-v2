@@ -1,4 +1,4 @@
-package api.stripe.customer.requests;
+package com.api.stripe.customer.requests;
 import static io.restassured.RestAssured.*;
 import java.util.Map;
 import io.restassured.response.Response;

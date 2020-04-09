@@ -1,8 +1,9 @@
-package api.stripe.customer.requests;
+package com.api.stripe.customer.requests;
 
 import static io.restassured.RestAssured.*;
 
-import api.common.utils.PropertFileReader;
+import com.api.common.utils.PropertFileReader;
+
 import io.restassured.response.Response;
 
 public class DeleteCustomer extends BaseApiRequest{

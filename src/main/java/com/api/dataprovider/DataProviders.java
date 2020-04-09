@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.testng.annotations.DataProvider;
 
-import api.common.utils.TestDataReader;
+import com.api.common.utils.TestDataReader;
 
 public class DataProviders {
 

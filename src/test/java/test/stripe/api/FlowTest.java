@@ -11,10 +11,11 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import api.stripe.customer.requests.DeleteCustomer;
-import api.stripe.customer.requests.GetCustomer;
-import api.stripe.customer.requests.PostCustomer;
-import api.stripe.customer.requests.PutCustomer;
+import com.api.stripe.customer.requests.DeleteCustomer;
+import com.api.stripe.customer.requests.GetCustomer;
+import com.api.stripe.customer.requests.PostCustomer;
+import com.api.stripe.customer.requests.PutCustomer;
+
 import io.restassured.response.Response;
 public class FlowTest {
 	static String custId="";
