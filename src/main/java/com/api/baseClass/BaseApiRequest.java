@@ -1,6 +1,8 @@
-package com.api.stripe.customer.requests;
+package com.api.baseClass;
 
 import com.api.common.utils.PropertFileReader;
+
+
 
 public class BaseApiRequest {
 	

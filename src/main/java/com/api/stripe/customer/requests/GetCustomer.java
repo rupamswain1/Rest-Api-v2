@@ -1,6 +1,9 @@
 package com.api.stripe.customer.requests;
 
 import static io.restassured.RestAssured.*;
+
+import com.api.baseClass.BaseApiRequest;
+
 import io.restassured.response.Response;
 public class GetCustomer extends BaseApiRequest{
 

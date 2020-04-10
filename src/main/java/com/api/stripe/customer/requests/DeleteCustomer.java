@@ -2,6 +2,7 @@ package com.api.stripe.customer.requests;
 
 import static io.restassured.RestAssured.*;
 
+import com.api.baseClass.BaseApiRequest;
 import com.api.common.utils.PropertFileReader;
 
 import io.restassured.response.Response;

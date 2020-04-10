@@ -1,33 +1,36 @@
 package test.stripe.api;
 
 import static io.restassured.RestAssured.*;
-import static org.testng.Assert.assertEquals;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.json.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.api.baseClass.BaseApiTest;
+import com.api.listners.ApiListner;
 import com.api.stripe.customer.requests.DeleteCustomer;
 import com.api.stripe.customer.requests.GetCustomer;
 import com.api.stripe.customer.requests.PostCustomer;
 import com.api.stripe.customer.requests.PutCustomer;
-
+import com.aventstack.extentreports.Status;
+import static com.api.asserts.Assert.*;
 import io.restassured.response.Response;
-public class FlowTest {
+public class FlowTest extends BaseApiTest{
 	static String custId="";
 	@Test(description="create a blank customer",priority=1)
 	public void createCustomer() throws Exception
 	{
 		PostCustomer post=new PostCustomer();
 		Response response=post.createCustomer();
-		assertEquals(response.statusCode(), 200);
+		assertEquals(response.statusCode(), 200,"Staus code");
 		FlowTest.custId=response.jsonPath().get("id");
 		JSONObject jsonObject=new JSONObject(response.asString());
-		Assert.assertTrue(jsonObject.has("id"));
+		assertTrue(jsonObject.has("id"));
+		logPass("Customer id generated: "+FlowTest.custId);
+		logPass(response.asString());
 		System.out.println("Generated customer id is: "+FlowTest.custId);
 	}
 	
@@ -44,6 +47,7 @@ public class FlowTest {
 		{
 			System.out.println(s);
 		}
+		logPass(response.asString());
 	}
 	@Test(description="Update customer data",priority=2,dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
 	public void updateCustomer(Map<String, String> data) throws Exception
@@ -55,6 +59,7 @@ public class FlowTest {
 		data.remove("custId");
 		Response response=updateCustomer.updateCustomerData(custId, data);
 		assertEquals(response.getStatusCode(), 200);
+		logPass(response.asString());
 				
 	}
 	@Test(description="Validate updated customer details", dependsOnMethods="updateCustomer",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
@@ -65,6 +70,7 @@ public class FlowTest {
 		assertEquals(response.getStatusCode(), 200);
 		assertEquals(response.jsonPath().get("email"), data.get("email"));
 		assertEquals(response.jsonPath().get("description"), data.get("description"));
+		logPass(response.asString());
 		//response.prettyPrint();
 	}
 	@Test(description="delete customer", dependsOnMethods="validatedUpdatedCustomerDetails",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
@@ -75,6 +81,7 @@ public class FlowTest {
 		assertEquals(response.getStatusCode(), 200);
 		assertEquals(response.jsonPath().get("id"), data.get("custId"));
 		assertEquals(response.jsonPath().get("deleted").toString(), "true");
+		logPass(response.asString());
 	}
 	
 }

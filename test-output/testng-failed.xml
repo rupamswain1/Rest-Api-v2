@@ -9,8 +9,8 @@
       <class name="test.stripe.api.FlowTest">
         <methods>
           <include name="validatedUpdatedCustomerDetails"/>
-          <include name="deleteCustomer"/>
-          <include name="updateCustomer" invocation-numbers="0 1"/>
+          <include name="deleteCustomer" invocation-numbers="0 1"/>
+          <include name="updateCustomer"/>
         </methods>
       </class> <!-- test.stripe.api.FlowTest -->
     </classes>
