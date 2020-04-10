@@ -74,7 +74,7 @@ public class FlowTest {
 		Response response=delete.deleteCustomer(data.get("custId"));
 		assertEquals(response.getStatusCode(), 200);
 		assertEquals(response.jsonPath().get("id"), data.get("custId"));
-		assertEquals(response.jsonPath().get("deleted"), true);
+		assertEquals(response.jsonPath().get("deleted").toString(), "true");
 	}
 	
 }
