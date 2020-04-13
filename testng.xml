@@ -4,15 +4,19 @@
   <listeners>
   	<listener class-name="com.api.listners.ApiListner"></listener>
   </listeners>
-  <!-- <test thread-count="5" name="Test">
-    <classes>
-       <class name="test.stripe.api.FlowTest"/>
-     </classes>
-  </test> Test -->
-  
+    
   <test thread-count="5" name="Test">
+   <groups>
+  	<run>
+  		<include name="paypal"></include>
+  		<include name="stripe"></include>
+  	</run>
+  </groups>
     <classes>
+   	   <class name="test.stripe.api.FlowTest"/>
+       <class name="test.payapl.api.GetOrderDetails"/>
        <class name="test.payapl.api.CreateOrderTest"/>
+       <class name="test.payapl.api.CreateToken"/>
      </classes>
   </test> <!-- Test -->
   

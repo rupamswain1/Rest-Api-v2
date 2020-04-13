@@ -13,7 +13,7 @@ import io.restassured.response.Response;
 
 public class CreateOrderTest extends BaseApiTest{
 
-	@Test(description="create order", dataProviderClass=com.api.dataprovider.DataProviders.class,dataProvider="dataProvider")
+	@Test(description="create order", dataProviderClass=com.api.dataprovider.DataProviders.class,dataProvider="dataProvider",groups="paypal")
 	public void createPaypalOrder(Map<String, String> data) throws Exception
 	{
 		CreateOrderPojo pojo=new CreateOrderPojo(data);
@@ -23,5 +23,15 @@ public class CreateOrderTest extends BaseApiTest{
 		response.prettyPrint();
 		JSONObject  jsonObject=new JSONObject(response.asString());
 		assertTrue(jsonObject.has("id"));
+	}
+	
+	@Test(description="Invalid data to create order", dataProviderClass=com.api.dataprovider.DataProviders.class,dataProvider="dataProvider",groups="paypal")
+	public void createPaypalOrderInvalidData(Map<String, String> data) throws Exception
+	{
+		CreateOrderPojo pojo=new CreateOrderPojo(data);
+		Response response=new PostRequests().createOrder(pojo);
+		assertEquals(response.getStatusCode(), 400);
+		assertEquals(response.jsonPath().get("name"), "INVALID_REQUEST");
+		
 	}
 }

@@ -1,13 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9763" started-at="2020-04-13T18:30:48 IST" finished-at="2020-04-13T18:30:58 IST">
+  <suite name="Suite" duration-ms="33504" started-at="2020-04-14T00:48:06 IST" finished-at="2020-04-14T00:48:39 IST">
     <groups>
+      <group name="stripe">
+        <method signature="FlowTest.createCustomer()[pri:1, instance:test.stripe.api.FlowTest@628c4ac0]" name="createCustomer" class="test.stripe.api.FlowTest"/>
+        <method signature="FlowTest.getCustomerDetails()[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="getCustomerDetails" class="test.stripe.api.FlowTest"/>
+        <method signature="FlowTest.updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" class="test.stripe.api.FlowTest"/>
+        <method signature="FlowTest.validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="validatedUpdatedCustomerDetails" class="test.stripe.api.FlowTest"/>
+        <method signature="FlowTest.deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="deleteCustomer" class="test.stripe.api.FlowTest"/>
+      </group> <!-- stripe -->
+      <group name="paypal">
+        <method signature="CreateOrderTest.createPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrder" class="test.payapl.api.CreateOrderTest"/>
+        <method signature="CreateOrderTest.createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" class="test.payapl.api.CreateOrderTest"/>
+        <method signature="CreateToken.generateToken()[pri:0, instance:test.payapl.api.CreateToken@363042d7]" name="generateToken" class="test.payapl.api.CreateToken"/>
+        <method signature="GetOrderDetails.getPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.GetOrderDetails@7b84fcf8]" name="getPaypalOrder" class="test.payapl.api.GetOrderDetails"/>
+      </group> <!-- paypal -->
     </groups>
-    <test name="Test" duration-ms="9763" started-at="2020-04-13T18:30:48 IST" finished-at="2020-04-13T18:30:58 IST">
+    <test name="Test" duration-ms="33504" started-at="2020-04-14T00:48:06 IST" finished-at="2020-04-14T00:48:39 IST">
+      <class name="test.payapl.api.GetOrderDetails">
+        <test-method status="PASS" signature="getPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.GetOrderDetails@7b84fcf8]" name="getPaypalOrder" duration-ms="3805" started-at="2020-04-14T00:48:18 IST" description="Get order details" data-provider="dataProvider" finished-at="2020-04-14T00:48:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{orderId=3TT14747RA4023328, currency_code=USD, value=500.00, intent=CAPTURE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPaypalOrder -->
+      </class> <!-- test.payapl.api.GetOrderDetails -->
+      <class name="test.stripe.api.FlowTest">
+        <test-method status="PASS" signature="createCustomer()[pri:1, instance:test.stripe.api.FlowTest@628c4ac0]" name="createCustomer" duration-ms="5028" started-at="2020-04-14T00:48:06 IST" description="create a blank customer" finished-at="2020-04-14T00:48:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method status="PASS" signature="getCustomerDetails()[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="getCustomerDetails" duration-ms="1074" started-at="2020-04-14T00:48:11 IST" description="Get customer details" depends-on-methods="test.stripe.api.FlowTest.createCustomer" finished-at="2020-04-14T00:48:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCustomerDetails -->
+        <test-method status="PASS" signature="updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" duration-ms="752" started-at="2020-04-14T00:48:13 IST" description="Update customer data" data-provider="dataProvider" finished-at="2020-04-14T00:48:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method status="PASS" signature="updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" duration-ms="735" started-at="2020-04-14T00:48:14 IST" description="Update customer data" data-provider="dataProvider" finished-at="2020-04-14T00:48:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method name="validatedUpdatedCustomerDetails" signature="validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="747" finished-at="2020-04-14T00:48:15 IST" started-at="2020-04-14T00:48:15 IST" depends-on-methods="test.stripe.api.FlowTest.updateCustomer" data-provider="dataProvider" description="Validate updated customer details">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatedUpdatedCustomerDetails -->
+        <test-method name="validatedUpdatedCustomerDetails" signature="validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="741" finished-at="2020-04-14T00:48:16 IST" started-at="2020-04-14T00:48:15 IST" depends-on-methods="test.stripe.api.FlowTest.updateCustomer" data-provider="dataProvider" description="Validate updated customer details">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatedUpdatedCustomerDetails -->
+        <test-method name="deleteCustomer" signature="deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="921" finished-at="2020-04-14T00:48:17 IST" started-at="2020-04-14T00:48:16 IST" depends-on-methods="test.stripe.api.FlowTest.validatedUpdatedCustomerDetails" data-provider="dataProvider" description="delete customer">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{custId=cus_H4UXTAj1ED5sCg}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method name="deleteCustomer" signature="deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="887" finished-at="2020-04-14T00:48:18 IST" started-at="2020-04-14T00:48:17 IST" depends-on-methods="test.stripe.api.FlowTest.validatedUpdatedCustomerDetails" data-provider="dataProvider" description="delete customer">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{custId=cus_H4UXAHhIAIICO1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+      </class> <!-- test.stripe.api.FlowTest -->
+      <class name="test.payapl.api.CreateToken">
+        <test-method status="PASS" signature="generateToken()[pri:0, instance:test.payapl.api.CreateToken@363042d7]" name="generateToken" duration-ms="1761" started-at="2020-04-14T00:48:37 IST" description="Generate Token id" finished-at="2020-04-14T00:48:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+      </class> <!-- test.payapl.api.CreateToken -->
       <class name="test.payapl.api.CreateOrderTest">
-        <test-method status="PASS" signature="createPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@7c711375]" name="createPaypalOrder" duration-ms="8931" started-at="2020-04-13T18:30:49 IST" description="create order" data-provider="dataProvider" finished-at="2020-04-13T18:30:58 IST">
+        <test-method status="PASS" signature="createPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrder" duration-ms="4416" started-at="2020-04-14T00:48:22 IST" description="create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:26 IST">
           <params>
             <param index="0">
               <value>
@@ -18,6 +126,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPaypalOrder -->
+        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3664" started-at="2020-04-14T00:48:26 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency_code=USD, value=500.0, intent=CAPTUREss}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPaypalOrderInvalidData -->
+        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3688" started-at="2020-04-14T00:48:30 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency_code=Rupee, value=500.0, intent=CAPTURE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPaypalOrderInvalidData -->
+        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3445" started-at="2020-04-14T00:48:34 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency_code=USD, value=ABC, intent=CAPTURE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPaypalOrderInvalidData -->
       </class> <!-- test.payapl.api.CreateOrderTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

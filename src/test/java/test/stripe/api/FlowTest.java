@@ -20,7 +20,7 @@ import static com.api.asserts.Assert.*;
 import io.restassured.response.Response;
 public class FlowTest extends BaseApiTest{
 	static String custId="";
-	@Test(description="create a blank customer",priority=1)
+	@Test(description="create a blank customer",priority=1,groups="stripe")
 	public void createCustomer() throws Exception
 	{
 		PostCustomer post=new PostCustomer();
@@ -34,7 +34,7 @@ public class FlowTest extends BaseApiTest{
 		System.out.println("Generated customer id is: "+FlowTest.custId);
 	}
 	
-	@Test(description="Get customer details", dependsOnMethods="createCustomer")
+	@Test(description="Get customer details", dependsOnMethods="createCustomer",groups="stripe")
 	public void getCustomerDetails() throws Exception
 	{
 		GetCustomer customer=new GetCustomer();
@@ -49,7 +49,7 @@ public class FlowTest extends BaseApiTest{
 		}
 		logPass(response.asString());
 	}
-	@Test(description="Update customer data",priority=2,dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	@Test(description="Update customer data",priority=2,dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class,groups="stripe")
 	public void updateCustomer(Map<String, String> data) throws Exception
 	{
 		
@@ -62,7 +62,7 @@ public class FlowTest extends BaseApiTest{
 		logPass(response.asString());
 				
 	}
-	@Test(description="Validate updated customer details", dependsOnMethods="updateCustomer",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	@Test(description="Validate updated customer details", dependsOnMethods="updateCustomer",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class,groups="stripe")
 	public void validatedUpdatedCustomerDetails(Map<String, String> data) throws Exception
 	{
 		GetCustomer customer=new GetCustomer();
@@ -73,7 +73,7 @@ public class FlowTest extends BaseApiTest{
 		logPass(response.asString());
 		//response.prettyPrint();
 	}
-	@Test(description="delete customer", dependsOnMethods="validatedUpdatedCustomerDetails",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class)
+	@Test(description="delete customer", dependsOnMethods="validatedUpdatedCustomerDetails",dataProvider="dataProvider",dataProviderClass=com.api.dataprovider.DataProviders.class,groups="stripe")
 	public void deleteCustomer(Map<String, String> data) throws Exception
 	{
 		DeleteCustomer delete=new DeleteCustomer();

@@ -47,7 +47,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
-			
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -62,7 +62,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
-			
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -77,6 +77,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -91,6 +92,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -105,6 +107,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -119,6 +122,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -133,6 +137,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -147,6 +152,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -161,6 +167,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -175,6 +182,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	public static void assertEquals(Double[] actual, Double[] expected) throws Exception
@@ -188,6 +196,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -202,6 +211,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -216,6 +226,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -230,6 +241,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -245,6 +257,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -259,6 +272,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -273,6 +287,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -287,6 +302,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -301,6 +317,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -315,6 +332,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -329,6 +347,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -343,6 +362,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -357,6 +377,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -371,6 +392,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -385,6 +407,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -399,6 +422,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	public static void assertEquals(Short actual, Short expected) throws Exception
@@ -412,6 +436,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -426,6 +451,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -440,6 +466,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -454,6 +481,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -468,6 +496,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -482,6 +511,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -497,6 +527,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -511,6 +542,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -526,6 +558,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -541,6 +574,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -556,6 +590,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -570,6 +605,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -584,6 +620,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -598,6 +635,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -612,6 +650,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	public static void 	assertNotEquals(Set actual, Set expected) throws Exception
@@ -625,6 +664,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -639,6 +679,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -653,6 +694,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -667,6 +709,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -681,6 +724,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -695,6 +739,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -711,6 +756,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -727,6 +773,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -741,6 +788,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -755,6 +803,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	public static void 	assertNotSame(Object actual, Object expected) throws Exception
@@ -768,6 +817,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -782,6 +832,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -796,6 +847,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -810,6 +862,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -824,6 +877,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -838,6 +892,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	public static void 	assertTrue(boolean condition) throws Exception
@@ -851,6 +906,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -865,6 +921,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -879,6 +936,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
@@ -893,6 +951,7 @@ public class Assert
 		{
 			LogStatus.fail(e);
 			e.printStackTrace();
+			throw new AssertionError(e);
 		}
 	}
 	
