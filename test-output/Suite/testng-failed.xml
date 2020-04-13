@@ -5,12 +5,18 @@
     <listener class-name="com.api.listners.ApiListner"/>
   </listeners>
   <test thread-count="5" verbose="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="paypal"/>
+        <include name="stripe"/>
+      </run>
+    </groups>
     <classes>
       <class name="test.stripe.api.FlowTest">
         <methods>
           <include name="validatedUpdatedCustomerDetails"/>
-          <include name="deleteCustomer" invocation-numbers="0 1"/>
-          <include name="updateCustomer"/>
+          <include name="deleteCustomer"/>
+          <include name="updateCustomer" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- test.stripe.api.FlowTest -->
     </classes>
