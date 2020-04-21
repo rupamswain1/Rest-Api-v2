@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="72" passed="70">
+<testng-results skipped="0" failed="0" ignored="0" total="72" passed="72">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="353951" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:44:11 IST">
+  <suite name="Suite" duration-ms="286780" started-at="2020-04-21T14:46:32 IST" finished-at="2020-04-21T14:51:19 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="353951" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:44:11 IST">
+    <test name="Test" duration-ms="286780" started-at="2020-04-21T14:46:32 IST" finished-at="2020-04-21T14:51:19 IST">
       <class name="test.stripe.api.runner.CustomerRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="setUpClass" is-config="true" duration-ms="183" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:38:17 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="setUpClass" is-config="true" duration-ms="198" started-at="2020-04-21T14:46:32 IST" finished-at="2020-04-21T14:46:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="9844" started-at="2020-04-21T14:38:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:27 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="8463" started-at="2020-04-21T14:46:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:46:41 IST">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5443" started-at="2020-04-21T14:38:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:33 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4195" started-at="2020-04-21T14:46:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:46:46 IST">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5299" started-at="2020-04-21T14:38:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:38 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3923" started-at="2020-04-21T14:46:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:46:49 IST">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5121" started-at="2020-04-21T14:38:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:43 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3903" started-at="2020-04-21T14:46:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:46:53 IST">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4986" started-at="2020-04-21T14:38:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:48 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3813" started-at="2020-04-21T14:46:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:46:57 IST">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4962" started-at="2020-04-21T14:38:48 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:53 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3778" started-at="2020-04-21T14:46:57 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:01 IST">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4850" started-at="2020-04-21T14:38:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:58 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3826" started-at="2020-04-21T14:47:01 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:05 IST">
           <params>
             <param index="0">
               <value>
@@ -126,7 +126,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4880" started-at="2020-04-21T14:38:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:03 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4104" started-at="2020-04-21T14:47:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:09 IST">
           <params>
             <param index="0">
               <value>
@@ -142,7 +142,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4630" started-at="2020-04-21T14:39:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:07 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4004" started-at="2020-04-21T14:47:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:13 IST">
           <params>
             <param index="0">
               <value>
@@ -158,38 +158,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="2551" started-at="2020-04-21T14:39:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Test Stripe API Customer flow"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
-at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4410" started-at="2020-04-21T14:39:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:14 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3885" started-at="2020-04-21T14:47:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:17 IST">
           <params>
             <param index="0">
               <value>
@@ -205,7 +174,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4524" started-at="2020-04-21T14:39:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:19 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5931" started-at="2020-04-21T14:47:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:23 IST">
           <params>
             <param index="0">
               <value>
@@ -221,7 +190,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4470" started-at="2020-04-21T14:39:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:23 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3802" started-at="2020-04-21T14:47:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:26 IST">
           <params>
             <param index="0">
               <value>
@@ -237,7 +206,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4308" started-at="2020-04-21T14:39:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:28 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3685" started-at="2020-04-21T14:47:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:30 IST">
           <params>
             <param index="0">
               <value>
@@ -253,7 +222,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4249" started-at="2020-04-21T14:39:28 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:32 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3780" started-at="2020-04-21T14:47:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:34 IST">
           <params>
             <param index="0">
               <value>
@@ -269,7 +238,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4669" started-at="2020-04-21T14:39:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:37 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3784" started-at="2020-04-21T14:47:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:38 IST">
           <params>
             <param index="0">
               <value>
@@ -285,7 +254,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4383" started-at="2020-04-21T14:39:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:41 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3753" started-at="2020-04-21T14:47:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:42 IST">
           <params>
             <param index="0">
               <value>
@@ -301,7 +270,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3905" started-at="2020-04-21T14:39:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:45 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3707" started-at="2020-04-21T14:47:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:45 IST">
           <params>
             <param index="0">
               <value>
@@ -317,7 +286,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3952" started-at="2020-04-21T14:39:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:49 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3795" started-at="2020-04-21T14:47:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:49 IST">
           <params>
             <param index="0">
               <value>
@@ -333,38 +302,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="2369" started-at="2020-04-21T14:39:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Test Stripe API Customer flow"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
-at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3738" started-at="2020-04-21T14:39:51 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:55 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3755" started-at="2020-04-21T14:47:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:53 IST">
           <params>
             <param index="0">
               <value>
@@ -380,7 +318,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4066" started-at="2020-04-21T14:39:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:59 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3618" started-at="2020-04-21T14:47:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:47:56 IST">
           <params>
             <param index="0">
               <value>
@@ -396,7 +334,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4141" started-at="2020-04-21T14:39:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:03 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3634" started-at="2020-04-21T14:47:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:00 IST">
           <params>
             <param index="0">
               <value>
@@ -412,7 +350,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3828" started-at="2020-04-21T14:40:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:07 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3923" started-at="2020-04-21T14:48:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:04 IST">
           <params>
             <param index="0">
               <value>
@@ -428,7 +366,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3841" started-at="2020-04-21T14:40:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:11 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3740" started-at="2020-04-21T14:48:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:08 IST">
           <params>
             <param index="0">
               <value>
@@ -444,7 +382,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3967" started-at="2020-04-21T14:40:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:15 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3731" started-at="2020-04-21T14:48:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:11 IST">
           <params>
             <param index="0">
               <value>
@@ -460,7 +398,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4156" started-at="2020-04-21T14:40:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:19 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3706" started-at="2020-04-21T14:48:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:15 IST">
           <params>
             <param index="0">
               <value>
@@ -476,7 +414,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3853" started-at="2020-04-21T14:40:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:23 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3709" started-at="2020-04-21T14:48:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:19 IST">
           <params>
             <param index="0">
               <value>
@@ -492,7 +430,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3858" started-at="2020-04-21T14:40:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:27 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3883" started-at="2020-04-21T14:48:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:23 IST">
           <params>
             <param index="0">
               <value>
@@ -508,7 +446,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3871" started-at="2020-04-21T14:40:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:31 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3903" started-at="2020-04-21T14:48:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:27 IST">
           <params>
             <param index="0">
               <value>
@@ -524,7 +462,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4006" started-at="2020-04-21T14:40:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:35 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3647" started-at="2020-04-21T14:48:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:30 IST">
           <params>
             <param index="0">
               <value>
@@ -540,7 +478,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3790" started-at="2020-04-21T14:40:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:38 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3677" started-at="2020-04-21T14:48:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:34 IST">
           <params>
             <param index="0">
               <value>
@@ -556,7 +494,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3778" started-at="2020-04-21T14:40:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:42 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3646" started-at="2020-04-21T14:48:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:38 IST">
           <params>
             <param index="0">
               <value>
@@ -572,7 +510,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3706" started-at="2020-04-21T14:40:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:46 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3762" started-at="2020-04-21T14:48:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:41 IST">
           <params>
             <param index="0">
               <value>
@@ -588,7 +526,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3743" started-at="2020-04-21T14:40:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:50 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3690" started-at="2020-04-21T14:48:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -604,7 +542,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4132" started-at="2020-04-21T14:40:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:54 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3633" started-at="2020-04-21T14:48:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:49 IST">
           <params>
             <param index="0">
               <value>
@@ -620,7 +558,39 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3723" started-at="2020-04-21T14:40:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:58 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3756" started-at="2020-04-21T14:48:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3700" started-at="2020-04-21T14:48:52 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:48:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3664" started-at="2020-04-21T14:48:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:00 IST">
           <params>
             <param index="0">
               <value>
@@ -636,7 +606,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3820" started-at="2020-04-21T14:40:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:01 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3768" started-at="2020-04-21T14:49:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:04 IST">
           <params>
             <param index="0">
               <value>
@@ -652,7 +622,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3758" started-at="2020-04-21T14:41:01 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:05 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3777" started-at="2020-04-21T14:49:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:07 IST">
           <params>
             <param index="0">
               <value>
@@ -668,7 +638,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3838" started-at="2020-04-21T14:41:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:09 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3694" started-at="2020-04-21T14:49:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -684,7 +654,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4161" started-at="2020-04-21T14:41:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:13 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3741" started-at="2020-04-21T14:49:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:15 IST">
           <params>
             <param index="0">
               <value>
@@ -700,7 +670,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3705" started-at="2020-04-21T14:41:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:17 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3804" started-at="2020-04-21T14:49:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:19 IST">
           <params>
             <param index="0">
               <value>
@@ -716,7 +686,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3845" started-at="2020-04-21T14:41:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:21 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3815" started-at="2020-04-21T14:49:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:22 IST">
           <params>
             <param index="0">
               <value>
@@ -732,7 +702,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3651" started-at="2020-04-21T14:41:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:24 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3838" started-at="2020-04-21T14:49:22 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:26 IST">
           <params>
             <param index="0">
               <value>
@@ -748,7 +718,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3732" started-at="2020-04-21T14:41:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:28 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3834" started-at="2020-04-21T14:49:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:30 IST">
           <params>
             <param index="0">
               <value>
@@ -764,7 +734,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3717" started-at="2020-04-21T14:41:28 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:32 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3860" started-at="2020-04-21T14:49:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:34 IST">
           <params>
             <param index="0">
               <value>
@@ -780,7 +750,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3685" started-at="2020-04-21T14:41:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:35 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3860" started-at="2020-04-21T14:49:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:38 IST">
           <params>
             <param index="0">
               <value>
@@ -796,7 +766,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3698" started-at="2020-04-21T14:41:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:39 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4074" started-at="2020-04-21T14:49:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:42 IST">
           <params>
             <param index="0">
               <value>
@@ -812,7 +782,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3718" started-at="2020-04-21T14:41:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:43 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3729" started-at="2020-04-21T14:49:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:46 IST">
           <params>
             <param index="0">
               <value>
@@ -828,7 +798,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3750" started-at="2020-04-21T14:41:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:47 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3593" started-at="2020-04-21T14:49:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:49 IST">
           <params>
             <param index="0">
               <value>
@@ -844,7 +814,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3728" started-at="2020-04-21T14:41:47 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:50 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3606" started-at="2020-04-21T14:49:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:53 IST">
           <params>
             <param index="0">
               <value>
@@ -860,7 +830,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3753" started-at="2020-04-21T14:41:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:54 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3677" started-at="2020-04-21T14:49:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:49:57 IST">
           <params>
             <param index="0">
               <value>
@@ -876,7 +846,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3709" started-at="2020-04-21T14:41:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:58 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3673" started-at="2020-04-21T14:49:57 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:00 IST">
           <params>
             <param index="0">
               <value>
@@ -892,7 +862,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3656" started-at="2020-04-21T14:41:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:02 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3668" started-at="2020-04-21T14:50:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:04 IST">
           <params>
             <param index="0">
               <value>
@@ -908,7 +878,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4026" started-at="2020-04-21T14:42:02 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:06 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3684" started-at="2020-04-21T14:50:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:08 IST">
           <params>
             <param index="0">
               <value>
@@ -924,7 +894,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3998" started-at="2020-04-21T14:42:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:10 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3660" started-at="2020-04-21T14:50:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:11 IST">
           <params>
             <param index="0">
               <value>
@@ -940,7 +910,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3845" started-at="2020-04-21T14:42:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:13 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3632" started-at="2020-04-21T14:50:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:15 IST">
           <params>
             <param index="0">
               <value>
@@ -956,7 +926,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3781" started-at="2020-04-21T14:42:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:17 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3731" started-at="2020-04-21T14:50:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:19 IST">
           <params>
             <param index="0">
               <value>
@@ -972,7 +942,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3854" started-at="2020-04-21T14:42:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:21 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3800" started-at="2020-04-21T14:50:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:22 IST">
           <params>
             <param index="0">
               <value>
@@ -988,7 +958,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3891" started-at="2020-04-21T14:42:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:25 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3597" started-at="2020-04-21T14:50:22 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:26 IST">
           <params>
             <param index="0">
               <value>
@@ -1004,7 +974,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4201" started-at="2020-04-21T14:42:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:29 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3828" started-at="2020-04-21T14:50:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:30 IST">
           <params>
             <param index="0">
               <value>
@@ -1020,7 +990,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3837" started-at="2020-04-21T14:42:29 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:33 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3645" started-at="2020-04-21T14:50:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:33 IST">
           <params>
             <param index="0">
               <value>
@@ -1036,7 +1006,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3805" started-at="2020-04-21T14:42:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:37 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3593" started-at="2020-04-21T14:50:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:37 IST">
           <params>
             <param index="0">
               <value>
@@ -1052,7 +1022,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3908" started-at="2020-04-21T14:42:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:41 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3632" started-at="2020-04-21T14:50:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:41 IST">
           <params>
             <param index="0">
               <value>
@@ -1068,7 +1038,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4047" started-at="2020-04-21T14:42:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:45 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3598" started-at="2020-04-21T14:50:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:44 IST">
           <params>
             <param index="0">
               <value>
@@ -1084,7 +1054,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="10795" started-at="2020-04-21T14:42:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:56 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3485" started-at="2020-04-21T14:50:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:48 IST">
           <params>
             <param index="0">
               <value>
@@ -1100,7 +1070,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11497" started-at="2020-04-21T14:42:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:07 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3933" started-at="2020-04-21T14:50:48 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:52 IST">
           <params>
             <param index="0">
               <value>
@@ -1116,7 +1086,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11279" started-at="2020-04-21T14:43:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:18 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3966" started-at="2020-04-21T14:50:52 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:50:56 IST">
           <params>
             <param index="0">
               <value>
@@ -1132,7 +1102,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="12536" started-at="2020-04-21T14:43:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:31 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4149" started-at="2020-04-21T14:50:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:51:00 IST">
           <params>
             <param index="0">
               <value>
@@ -1148,7 +1118,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="10824" started-at="2020-04-21T14:43:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:42 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3601" started-at="2020-04-21T14:51:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:51:03 IST">
           <params>
             <param index="0">
               <value>
@@ -1164,7 +1134,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11271" started-at="2020-04-21T14:43:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:53 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3570" started-at="2020-04-21T14:51:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:51:07 IST">
           <params>
             <param index="0">
               <value>
@@ -1180,7 +1150,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="13734" started-at="2020-04-21T14:43:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:44:07 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="8329" started-at="2020-04-21T14:51:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:51:15 IST">
           <params>
             <param index="0">
               <value>
@@ -1196,7 +1166,7 @@ at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiF
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="tearDownClass" is-config="true" duration-ms="4318" started-at="2020-04-21T14:44:07 IST" finished-at="2020-04-21T14:44:11 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="tearDownClass" is-config="true" duration-ms="3911" started-at="2020-04-21T14:51:15 IST" finished-at="2020-04-21T14:51:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
