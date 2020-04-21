@@ -6,11 +6,12 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+import com.api.common.utils.PropertyFileWriter;
 import com.api.reporterConfig.LogStatus;
 
 
 
-public class Assert 
+public class Assert extends PropertyFileWriter
 {
 	public static void pass(Object actual, Object expected, String message)
 	{

@@ -28,6 +28,35 @@ public class PropertFileReader {
 		}
 		return  returnData;
 	}
+	public String getApplicationData(String data,String filePath) throws Exception
+	{
+		Properties properties=new Properties();
+		properties.load(new FileInputStream(filePath));
+		
+		String returnData=null;
+		try {
+			returnData=properties.getProperty(data).toString();
+		}
+		catch (NullPointerException e) {
+			throw new Exception("Data with name: \""+data+"\" was not found in application.properties file");
+		}
+		return  returnData;
+	}
+	
+	public String getTempData(String data) throws Exception
+	{
+		Properties properties=new Properties();
+		properties.load(new FileInputStream(".//src//test//resources//temp.properties"));
+		
+		String returnData=null;
+		try {
+			returnData=properties.getProperty(data).toString();
+		}
+		catch (NullPointerException e) {
+			throw new Exception("Data with name: \""+data+"\" was not found in application.properties file");
+		}
+		return  returnData;
+	}
 	/*public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println(new PropertFileReader().getApplicationData("names"));

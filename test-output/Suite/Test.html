@@ -55,18 +55,58 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>70/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 00:48:06 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 21 14:38:17 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33504 ms)</td>
+<tr><td>Total time:</td><td>353 seconds (353951 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>stripe paypal </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+	at ?.validate status code is &quot;20&quot;(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1824225917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1824225917'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+	at ?.validate status code is &quot;20&quot;(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+</pre></div></td>
+<td>2</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+	at ?.validate status code is &quot;20&quot;(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace861255935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861255935'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+	at ?.validate status code is &quot;20&quot;(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+</pre></div></td>
+<td>2</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,75 +115,355 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.stripe.api.FlowTest.createCustomer()'><b>createCustomer</b><br>Test class: test.stripe.api.FlowTest<br>Test method: create a blank customer</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>9</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>5</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.payapl.api.CreateOrderTest.createPaypalOrder()'><b>createPaypalOrder</b><br>Test class: test.payapl.api.CreateOrderTest<br>Test method: create order<br>Parameters: {currency_code=USD, value=500.0, intent=CAPTURE}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>5</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>5</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>4</td>
-<td>test.payapl.api.CreateOrderTest@30b19518</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.payapl.api.CreateOrderTest.createPaypalOrderInvalidData()'><b>createPaypalOrderInvalidData</b><br>Test class: test.payapl.api.CreateOrderTest<br>Test method: Invalid data to create order<br>Parameters: {currency_code=USD, value=500.0, intent=CAPTUREss}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>3</td>
-<td>test.payapl.api.CreateOrderTest@30b19518</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.payapl.api.CreateOrderTest.createPaypalOrderInvalidData()'><b>createPaypalOrderInvalidData</b><br>Test class: test.payapl.api.CreateOrderTest<br>Test method: Invalid data to create order<br>Parameters: {currency_code=Rupee, value=500.0, intent=CAPTURE}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>3</td>
-<td>test.payapl.api.CreateOrderTest@30b19518</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.payapl.api.CreateOrderTest.createPaypalOrderInvalidData()'><b>createPaypalOrderInvalidData</b><br>Test class: test.payapl.api.CreateOrderTest<br>Test method: Invalid data to create order<br>Parameters: {currency_code=USD, value=ABC, intent=CAPTURE}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>3</td>
-<td>test.payapl.api.CreateOrderTest@30b19518</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.deleteCustomer()'><b>deleteCustomer</b><br>Test class: test.stripe.api.FlowTest<br>Test method: delete customer<br>Parameters: {custId=cus_H4UXTAj1ED5sCg}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.deleteCustomer()'><b>deleteCustomer</b><br>Test class: test.stripe.api.FlowTest<br>Test method: delete customer<br>Parameters: {custId=cus_H4UXAHhIAIICO1}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.payapl.api.CreateToken.generateToken()'><b>generateToken</b><br>Test class: test.payapl.api.CreateToken<br>Test method: Generate Token id</td>
-<td></td>
-<td>1</td>
-<td>test.payapl.api.CreateToken@363042d7</td></tr>
-<tr>
-<td title='test.stripe.api.FlowTest.getCustomerDetails()'><b>getCustomerDetails</b><br>Test class: test.stripe.api.FlowTest<br>Test method: Get customer details</td>
-<td></td>
-<td>1</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
-<tr>
-<td title='test.payapl.api.GetOrderDetails.getPaypalOrder()'><b>getPaypalOrder</b><br>Test class: test.payapl.api.GetOrderDetails<br>Test method: Get order details<br>Parameters: {orderId=3TT14747RA4023328, currency_code=USD, value=500.00, intent=CAPTURE}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
 <td>3</td>
-<td>test.payapl.api.GetOrderDetails@7b84fcf8</td></tr>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.updateCustomer()'><b>updateCustomer</b><br>Test class: test.stripe.api.FlowTest<br>Test method: Update customer data<br>Parameters: {email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.updateCustomer()'><b>updateCustomer</b><br>Test class: test.stripe.api.FlowTest<br>Test method: Update customer data<br>Parameters: {email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.validatedUpdatedCustomerDetails()'><b>validatedUpdatedCustomerDetails</b><br>Test class: test.stripe.api.FlowTest<br>Test method: Validate updated customer details<br>Parameters: {email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 <tr>
-<td title='test.stripe.api.FlowTest.validatedUpdatedCustomerDetails()'><b>validatedUpdatedCustomerDetails</b><br>Test class: test.stripe.api.FlowTest<br>Test method: Validate updated customer details<br>Parameters: {email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}</td>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
 <td></td>
-<td>0</td>
-<td>test.stripe.api.FlowTest@628c4ac0</td></tr>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>3</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>4</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>10</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>11</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>11</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>12</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>10</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>11</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
+<tr>
+<td title='test.stripe.api.runner.CustomerRunner.runScenario()'><b>runScenario</b><br>Test class: test.stripe.api.runner.CustomerRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test E2E Flow of Stripe API customer flow", "Test Stripe API Customer flow version 2 for test"</td>
+<td></td>
+<td>13</td>
+<td>test.stripe.api.runner.CustomerRunner@4232c52b</td></tr>
 </table><p>
 </body>
 </html>

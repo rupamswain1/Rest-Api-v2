@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.payapl.api.CreateOrderTest">
+      <class name="test.stripe.api.runner.CustomerRunner">
         <methods>
-          <include name="createPaypalOrder" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- test.payapl.api.CreateOrderTest -->
+      </class> <!-- test.stripe.api.runner.CustomerRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -53,10 +53,6 @@ public class LogStatus
 			getTestReport().log(Status.SKIP, message);
 		}
 		
-		public static void unknown(String message)
-		{
-			getTestReport().log(Status.UNKNOWN, message);
-		}
 		
 		public static void warning(String message)
 		{

@@ -1,165 +1,1206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+<testng-results skipped="0" failed="2" ignored="0" total="72" passed="70">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33504" started-at="2020-04-14T00:48:06 IST" finished-at="2020-04-14T00:48:39 IST">
+  <suite name="Suite" duration-ms="353951" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:44:11 IST">
     <groups>
-      <group name="stripe">
-        <method signature="FlowTest.createCustomer()[pri:1, instance:test.stripe.api.FlowTest@628c4ac0]" name="createCustomer" class="test.stripe.api.FlowTest"/>
-        <method signature="FlowTest.getCustomerDetails()[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="getCustomerDetails" class="test.stripe.api.FlowTest"/>
-        <method signature="FlowTest.updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" class="test.stripe.api.FlowTest"/>
-        <method signature="FlowTest.validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="validatedUpdatedCustomerDetails" class="test.stripe.api.FlowTest"/>
-        <method signature="FlowTest.deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="deleteCustomer" class="test.stripe.api.FlowTest"/>
-      </group> <!-- stripe -->
-      <group name="paypal">
-        <method signature="CreateOrderTest.createPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrder" class="test.payapl.api.CreateOrderTest"/>
-        <method signature="CreateOrderTest.createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" class="test.payapl.api.CreateOrderTest"/>
-        <method signature="CreateToken.generateToken()[pri:0, instance:test.payapl.api.CreateToken@363042d7]" name="generateToken" class="test.payapl.api.CreateToken"/>
-        <method signature="GetOrderDetails.getPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.GetOrderDetails@7b84fcf8]" name="getPaypalOrder" class="test.payapl.api.GetOrderDetails"/>
-      </group> <!-- paypal -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="33504" started-at="2020-04-14T00:48:06 IST" finished-at="2020-04-14T00:48:39 IST">
-      <class name="test.payapl.api.GetOrderDetails">
-        <test-method status="PASS" signature="getPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.GetOrderDetails@7b84fcf8]" name="getPaypalOrder" duration-ms="3805" started-at="2020-04-14T00:48:18 IST" description="Get order details" data-provider="dataProvider" finished-at="2020-04-14T00:48:22 IST">
+    <test name="Test" duration-ms="353951" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:44:11 IST">
+      <class name="test.stripe.api.runner.CustomerRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="setUpClass" is-config="true" duration-ms="183" started-at="2020-04-21T14:38:17 IST" finished-at="2020-04-21T14:38:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="9844" started-at="2020-04-21T14:38:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:27 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{orderId=3TT14747RA4023328, currency_code=USD, value=500.00, intent=CAPTURE}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getPaypalOrder -->
-      </class> <!-- test.payapl.api.GetOrderDetails -->
-      <class name="test.stripe.api.FlowTest">
-        <test-method status="PASS" signature="createCustomer()[pri:1, instance:test.stripe.api.FlowTest@628c4ac0]" name="createCustomer" duration-ms="5028" started-at="2020-04-14T00:48:06 IST" description="create a blank customer" finished-at="2020-04-14T00:48:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCustomer -->
-        <test-method status="PASS" signature="getCustomerDetails()[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" name="getCustomerDetails" duration-ms="1074" started-at="2020-04-14T00:48:11 IST" description="Get customer details" depends-on-methods="test.stripe.api.FlowTest.createCustomer" finished-at="2020-04-14T00:48:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCustomerDetails -->
-        <test-method status="PASS" signature="updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" duration-ms="752" started-at="2020-04-14T00:48:13 IST" description="Update customer data" data-provider="dataProvider" finished-at="2020-04-14T00:48:14 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5443" started-at="2020-04-21T14:38:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateCustomer -->
-        <test-method status="PASS" signature="updateCustomer(java.util.Map)[pri:2, instance:test.stripe.api.FlowTest@628c4ac0]" name="updateCustomer" duration-ms="735" started-at="2020-04-14T00:48:14 IST" description="Update customer data" data-provider="dataProvider" finished-at="2020-04-14T00:48:15 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5299" started-at="2020-04-21T14:38:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateCustomer -->
-        <test-method name="validatedUpdatedCustomerDetails" signature="validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="747" finished-at="2020-04-14T00:48:15 IST" started-at="2020-04-14T00:48:15 IST" depends-on-methods="test.stripe.api.FlowTest.updateCustomer" data-provider="dataProvider" description="Validate updated customer details">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="5121" started-at="2020-04-21T14:38:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=2122@email.com, custId=cus_H4UXTAj1ED5sCg, description=Customer no 1}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatedUpdatedCustomerDetails -->
-        <test-method name="validatedUpdatedCustomerDetails" signature="validatedUpdatedCustomerDetails(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="741" finished-at="2020-04-14T00:48:16 IST" started-at="2020-04-14T00:48:15 IST" depends-on-methods="test.stripe.api.FlowTest.updateCustomer" data-provider="dataProvider" description="Validate updated customer details">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4986" started-at="2020-04-21T14:38:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=333@email.com, custId=cus_H4UXAHhIAIICO1, description=Customer no 2}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatedUpdatedCustomerDetails -->
-        <test-method name="deleteCustomer" signature="deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="921" finished-at="2020-04-14T00:48:17 IST" started-at="2020-04-14T00:48:16 IST" depends-on-methods="test.stripe.api.FlowTest.validatedUpdatedCustomerDetails" data-provider="dataProvider" description="delete customer">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4962" started-at="2020-04-21T14:38:48 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:53 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{custId=cus_H4UXTAj1ED5sCg}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCustomer -->
-        <test-method name="deleteCustomer" signature="deleteCustomer(java.util.Map)[pri:0, instance:test.stripe.api.FlowTest@628c4ac0]" status="PASS" duration-ms="887" finished-at="2020-04-14T00:48:18 IST" started-at="2020-04-14T00:48:17 IST" depends-on-methods="test.stripe.api.FlowTest.validatedUpdatedCustomerDetails" data-provider="dataProvider" description="delete customer">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4850" started-at="2020-04-21T14:38:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:38:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{custId=cus_H4UXAHhIAIICO1}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCustomer -->
-      </class> <!-- test.stripe.api.FlowTest -->
-      <class name="test.payapl.api.CreateToken">
-        <test-method status="PASS" signature="generateToken()[pri:0, instance:test.payapl.api.CreateToken@363042d7]" name="generateToken" duration-ms="1761" started-at="2020-04-14T00:48:37 IST" description="Generate Token id" finished-at="2020-04-14T00:48:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateToken -->
-      </class> <!-- test.payapl.api.CreateToken -->
-      <class name="test.payapl.api.CreateOrderTest">
-        <test-method status="PASS" signature="createPaypalOrder(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrder" duration-ms="4416" started-at="2020-04-14T00:48:22 IST" description="create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:26 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4880" started-at="2020-04-21T14:38:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:03 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{currency_code=USD, value=500.0, intent=CAPTURE}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPaypalOrder -->
-        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3664" started-at="2020-04-14T00:48:26 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:30 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4630" started-at="2020-04-21T14:39:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:07 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{currency_code=USD, value=500.0, intent=CAPTUREss}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPaypalOrderInvalidData -->
-        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3688" started-at="2020-04-14T00:48:30 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:34 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="2551" started-at="2020-04-21T14:39:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:10 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{currency_code=Rupee, value=500.0, intent=CAPTURE}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4410" started-at="2020-04-21T14:39:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPaypalOrderInvalidData -->
-        <test-method status="PASS" signature="createPaypalOrderInvalidData(java.util.Map)[pri:0, instance:test.payapl.api.CreateOrderTest@30b19518]" name="createPaypalOrderInvalidData" duration-ms="3445" started-at="2020-04-14T00:48:34 IST" description="Invalid data to create order" data-provider="dataProvider" finished-at="2020-04-14T00:48:37 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4524" started-at="2020-04-21T14:39:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:19 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{currency_code=USD, value=ABC, intent=CAPTURE}]]>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPaypalOrderInvalidData -->
-      </class> <!-- test.payapl.api.CreateOrderTest -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4470" started-at="2020-04-21T14:39:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4308" started-at="2020-04-21T14:39:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4249" started-at="2020-04-21T14:39:28 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4669" started-at="2020-04-21T14:39:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4383" started-at="2020-04-21T14:39:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3905" started-at="2020-04-21T14:39:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3952" started-at="2020-04-21T14:39:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="2369" started-at="2020-04-21T14:39:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at test.stripe.steps.StripeCustomer.validate_status_code_is_(StripeCustomer.java:44)
+at ✽.validate status code is "20"(file:src/test/resources/Scenarios/StripeApiFlow.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3738" started-at="2020-04-21T14:39:51 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4066" started-at="2020-04-21T14:39:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:39:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4141" started-at="2020-04-21T14:39:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3828" started-at="2020-04-21T14:40:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3841" started-at="2020-04-21T14:40:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3967" started-at="2020-04-21T14:40:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4156" started-at="2020-04-21T14:40:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3853" started-at="2020-04-21T14:40:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3858" started-at="2020-04-21T14:40:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3871" started-at="2020-04-21T14:40:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4006" started-at="2020-04-21T14:40:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3790" started-at="2020-04-21T14:40:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3778" started-at="2020-04-21T14:40:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3706" started-at="2020-04-21T14:40:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3743" started-at="2020-04-21T14:40:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4132" started-at="2020-04-21T14:40:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3723" started-at="2020-04-21T14:40:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:40:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3820" started-at="2020-04-21T14:40:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3758" started-at="2020-04-21T14:41:01 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3838" started-at="2020-04-21T14:41:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4161" started-at="2020-04-21T14:41:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3705" started-at="2020-04-21T14:41:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3845" started-at="2020-04-21T14:41:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3651" started-at="2020-04-21T14:41:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3732" started-at="2020-04-21T14:41:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3717" started-at="2020-04-21T14:41:28 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3685" started-at="2020-04-21T14:41:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3698" started-at="2020-04-21T14:41:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3718" started-at="2020-04-21T14:41:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3750" started-at="2020-04-21T14:41:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3728" started-at="2020-04-21T14:41:47 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3753" started-at="2020-04-21T14:41:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3709" started-at="2020-04-21T14:41:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:41:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3656" started-at="2020-04-21T14:41:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4026" started-at="2020-04-21T14:42:02 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3998" started-at="2020-04-21T14:42:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3845" started-at="2020-04-21T14:42:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3781" started-at="2020-04-21T14:42:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3854" started-at="2020-04-21T14:42:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3891" started-at="2020-04-21T14:42:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4201" started-at="2020-04-21T14:42:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3837" started-at="2020-04-21T14:42:29 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3805" started-at="2020-04-21T14:42:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="3908" started-at="2020-04-21T14:42:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="4047" started-at="2020-04-21T14:42:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="10795" started-at="2020-04-21T14:42:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:42:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11497" started-at="2020-04-21T14:42:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11279" started-at="2020-04-21T14:43:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="12536" started-at="2020-04-21T14:43:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="10824" started-at="2020-04-21T14:43:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="11271" started-at="2020-04-21T14:43:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:43:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="runScenario" duration-ms="13734" started-at="2020-04-21T14:43:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-21T14:44:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test E2E Flow of Stripe API customer flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Stripe API Customer flow version 2 for test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:test.stripe.api.runner.CustomerRunner@4232c52b]" name="tearDownClass" is-config="true" duration-ms="4318" started-at="2020-04-21T14:44:07 IST" finished-at="2020-04-21T14:44:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.stripe.api.runner.CustomerRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
